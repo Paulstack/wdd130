@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #392F5A;   
+    --secondary-color: #FF8811; 
+    --background-color: #FFF8F0; 
+    --text-color: #392F5A;      
+    --highlight-color: #F4D06F; 
+    --accent-color: #9DD9D2;    
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+}
+
+nav a {
+    color: var(--highlight-color);
+}
+
+h1, h2 {
+    color: var(--secondary-color);
+}
+
+.hero {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background: var(--secondary-color);
+    color: white;
+}
