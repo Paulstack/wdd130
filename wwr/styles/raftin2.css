@@ -53,26 +53,43 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    filter: brightness(60%);
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Center items vertically */
+    height: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    /*text-align: center; */ 
+    color: #392f5a;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    color: #392f5a;
+    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.hero img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Section - Article */
@@ -81,7 +98,7 @@ nav ul li a {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 136, 17, 0.9);
+    background-color: rgba(218, 210, 203, 0.5); /* Adjusted transparency to 50% */
     padding: 15px;
     border-radius: 5px;
     max-width: 400px;
@@ -118,28 +135,17 @@ section img {
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #392f5a;
     color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
 }
 
 footer a img {
     width: 30px;
     margin: 5px;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 400px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .overlay {
@@ -214,3 +220,169 @@ footer a img {
     width: 80%; /* Adjust width */
     text-align: center; /* Center text */
 }
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo Title Navigation */
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff8f0;
+}
+
+#history img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#history h2 {
+    grid-column: 1 / -1; /* Span the heading across all columns */
+    text-align: center;
+    font-size: 2rem;
+    color: #ff8811;
+    margin-bottom: 20px;
+}
+
+#history p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.adventure-gallery {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: space-between; /* Space out the images evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between the images */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for the section */
+    text-align: center;
+}
+
+.adventure-gallery h2 {
+    width: 100%; /* Ensure the heading spans the full width */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #ff8811;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 calc(20% - 20px); /* Ensure each figure takes up 20% of the row */
+    max-width: 200px; /* Limit the maximum width of each figure */
+    text-align: center; /* Center the caption */
+}
+
+.adventure-gallery img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px; /* Add spacing above the caption */
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #392f5a;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+    border-left: 5px solid #cc1800;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px; /* Creates space between heading and text */
+}
+
+.mission p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-top: auto; /* Pushes paragraph to the bottom */
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo Title Navigation */
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
