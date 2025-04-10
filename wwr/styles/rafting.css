@@ -167,3 +167,64 @@ footer a {
 footer a:hover {
     color: #005fa3;
 }
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero .cta-button:hover {
+    background-color: #005fa3;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-grid div {
+    text-align: center;
+}
+
+.about-grid img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
